@@ -78,7 +78,7 @@ class Graph1{
     }
 
     class Vertex {
-    	static int count = 1;
+    	int count = 1;
         String label;
         Vertex(String label) {
             this.label = label;

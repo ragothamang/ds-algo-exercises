@@ -20,7 +20,6 @@ public class NextGreaterElement {
 		      stack.push(idx);
 		      ++idx;
 		    }
-
 		    return res;
 		  }
 

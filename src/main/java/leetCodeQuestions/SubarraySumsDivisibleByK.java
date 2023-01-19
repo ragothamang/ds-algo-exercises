@@ -5,25 +5,34 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SubarraySumsDivisibleByK {
-	 public  int subarraysDivByK(int[] nums, int k) {
-	        Map<Integer, Integer> map = new HashMap<>();
-	        for (int i = 0, remainder; i < nums.length; i++) {
-	            if (i > 0) nums[i] += nums[i - 1];
-	            remainder = (nums[i] % k + k) % k;
-	            map.put(remainder, map.getOrDefault(remainder, 0) + 1);
-	        }
-	        int result = map.getOrDefault(0, 0);
-	        for (int frequency : map.values())
-	            result += frequency * (frequency - 1) / 2;
-	        return result;
-	    }
+	public  int subarraysDivByK(int[] nums, int k) {
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0, remainder; i < nums.length; i++) {
+			if (i > 0) nums[i] += nums[i - 1];
+			remainder = (nums[i] % k + k) % k;
+
+			System.out.println("  reminder  " + remainder);
+			map.put(remainder, map.getOrDefault(remainder, 0) + 1);
+		}
+		int result = map.getOrDefault(0, 0);
+		System.out.println("Result  "+ result );
+		System.out.println("map   "+ map);
+		for (int frequency : map.values()) {
+			result += frequency * (frequency - 1) / 2;
+			System.out.println("Result  -->  "+ result );
+		}
+		return result;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] ip = {1,-2,3,-2};
+		//		int[] ip = {1,-2,3,-2};
+
+		int[] ip = {4,5,0,-2,-3,1};
+
 		System.out.println(Arrays.toString(ip));
 		SubarraySumsDivisibleByK obj = new SubarraySumsDivisibleByK();
 		int result = obj.subarraysDivByK(ip, 5);
-		
+
 		System.out.println(result);
 	}
 
@@ -57,4 +66,4 @@ Space Complexity: O(n),
 where 'n' is the length of 'nums'.
 The worst case is when all the prefix sums in 'nums' have different remainders with 'k', resulting in the maximum size of the HashMap to be 'n'.
 
-*/
+ */

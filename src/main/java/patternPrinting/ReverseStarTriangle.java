@@ -1,7 +1,7 @@
 package patternPrinting;
 
 public class ReverseStarTriangle {
-	public static void nStarTriangle(int n) {
+	public static void nReverseStarTriangle(int n) {
         // Write your code here
 		for(int i=n-1;i>=0;i--){
             for(int f=0;f<n-i-1;f++) {
@@ -19,7 +19,7 @@ public class ReverseStarTriangle {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		nStarTriangle(5);
+		nReverseStarTriangle(5);
 	}
 
 }

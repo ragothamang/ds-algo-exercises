@@ -24,5 +24,12 @@ public class NumberCrown {
 		// TODO Auto-generated method stub
 		numberCrown(4);
 	}
-
+/*
+ 
+1      1
+12    21
+123  321
+12344321
+ 
+ */
 }

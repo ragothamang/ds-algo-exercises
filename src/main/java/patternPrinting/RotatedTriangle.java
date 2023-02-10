@@ -15,7 +15,19 @@ public class RotatedTriangle {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		nStarTriangle(5);
+		nStarTriangle(4);
 	}
+	/*
+	 
+*
+**
+***
+****
+***
+**
+*
+	    
+	 */
+	
 
 }

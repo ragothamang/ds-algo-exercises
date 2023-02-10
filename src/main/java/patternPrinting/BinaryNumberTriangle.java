@@ -32,5 +32,13 @@ public class BinaryNumberTriangle {
 		// TODO Auto-generated method stub
 		nBinaryTriangle(5);
 	}
+	/*
 
+1
+01
+101
+0101
+10101
+			 
+			 */
 }

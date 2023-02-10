@@ -10,7 +10,7 @@ public class JumpGameII {
         int curr = 0;
         int count = 0;
         for(int i = 0 ; i < nums.length - 1 ; i++){
-        	System.out.println("count -->> "+ count+ "i-->> "+ i +" curr -->>  "+ curr + " max -->> "+ max);
+        	System.out.println("count -->> "+ count+ " i-->> "+ i +" curr -->>  "+ curr + " max -->> "+ max);
             max = Math.max(max , i + nums[i]);
             if(curr == i){
                 curr = max;
@@ -41,7 +41,7 @@ public class JumpGameII {
 
 	public static void main(String[] args) {
 		 
-		int[] ip = {0,0,1,1,4};
+		int[] ip = {2,3,1,1,4};
 		
 			int result = jump(ip);
 			System.out.println(result);

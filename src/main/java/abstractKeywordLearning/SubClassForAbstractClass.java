@@ -9,7 +9,7 @@ public class SubClassForAbstractClass extends AbstractClassSample{
 		// TODO Auto-generated method stub
 		AbstractClassSample dog = new SubClassForAbstractClass();
 	        dog.sound();  // Outputs: The dog barks.
-	        dog.sleep();  // Outputs: This animal is sleepin
+	        dog.sleep();  // Outputs: This animal is sleeping
 
 	}
 
